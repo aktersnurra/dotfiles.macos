@@ -1,0 +1,33 @@
+command = /bin/zsh
+shell-integration = zsh
+macos-option-as-alt = true
+
+# Background and foreground
+background = 151515
+foreground = E1E1E1
+
+# Cursor
+cursor-color = D0D0D0
+cursor-text = 151515
+
+# Selection
+selection-background = 202020
+selection-foreground = E1E1E1
+
+# ANSI colors
+palette = 0=#151515
+palette = 1=#b46958
+palette = 2=#90A959
+palette = 3=#F4BF75
+palette = 4=#BAD7FF
+palette = 5=#AA749F
+palette = 6=#88afa2
+palette = 7=#AFAFAF
+palette = 8=#373737
+palette = 9=#b46958
+palette = 10=#90A959
+palette = 11=#F4BF75
+palette = 12=#BAD7FF
+palette = 13=#AA759F
+palette = 14=#88afa2
+palette = 15=#E1E1E1
