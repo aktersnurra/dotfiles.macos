@@ -21,7 +21,7 @@ set-prompt() {
   local top_left='%(5~|%-1~/…/%3~|%4~)'
   local top_right="$vcs_info_msg_0_ "
   local bottom_left='%B%F{%(?.white.red)}%#%f%b %{${reset_color}%}'
-  PROMPT="${top_left}${top_right}\n${bottom_left} "
+  PROMPT="${top_left}${top_right}"$'\n'"${bottom_left} "
 }
 
 precmd_functions+=(prompt-vcs-info set-prompt)
