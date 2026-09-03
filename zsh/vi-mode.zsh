@@ -1,10 +1,12 @@
 bindkey -v
 export KEYTIMEOUT=1
 
-bindkey -M menuselect '^h' vi-backward-char
-bindkey -M menuselect '^j' vi-down-line-or-history
-bindkey -M menuselect '^k' vi-up-line-or-history
-bindkey -M menuselect '^l' vi-forward-char
+if bindkey -lL | command grep -qx 'bindkey -N menuselect'; then
+  bindkey -M menuselect '^h' vi-backward-char
+  bindkey -M menuselect '^j' vi-down-line-or-history
+  bindkey -M menuselect '^k' vi-up-line-or-history
+  bindkey -M menuselect '^l' vi-forward-char
+fi
 bindkey -v '^?' backward-delete-char
 
 zle-keymap-select() {
